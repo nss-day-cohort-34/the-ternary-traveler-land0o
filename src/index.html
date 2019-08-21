@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bangers|Coming+Soon|Lacquer|Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ternary Traveler</title>
+  </head>
+  <body>
+    <!-- <article class="landingPage--container"> -->
+    <section class="intro landing--page">
+      <div class="inner">
+        <div class="content">
+          <h1 id="top">Welcome Ternary Travelers!!</h1>
+
+          <a href="#userStatement">
+            <p>Mira's Travel Blog</p>
+          </a>
+        </div>
+        <!-- end of content  -->
+      </div>
+      <!-- end of inner  -->
+    </section>
+    <!-- end of section  -->
+    <div class="userStatement landing--page" id="userStatement">
+      <h1>Who am I!?</h1>
+      <img
+        class="stevenImage"
+        src="/src/img/steven.gif "
+        alt="Steven The Traveler"
+      />
+      <p>
+        I am Mira a travel blogger who creates both videos and writes blog posts
+        for my website. I try to travel to three destinations per month,
+        spending a week in each place. Then I take a week off before starting
+        the whole cycle again. I will use this single page application to share
+        points of interests for the next set of places I will be visiting.
+        <br />
+        <a href="#content-container">See my trip information below.</a>
+      </p>
+    </div>
+    <!-- end of user statement div  -->
+    <!-- end of landing page  -->
+    <article id="content-container">
+      <div class="inner-content">
+        <h1>Trip info placeholder</h1>
+        <div class="blog-content">
+          <aside class="blog-insert">
+            <h2>Country: Italy</h2>
+            <p>Event attended: Local Market</p>
+            <p>
+              Description: Local market where you can purchase local products
+              and try the local food.
+            </p>
+            <p>Cost: $0.00 spent</p>
+            <p>
+              My Review: You can definitely get things for a lower price if you
+              are willing to bargain!
+            </p>
+            <button>edit</button>
+            <button>delete</button>
+          </aside>
+        </div>
+        <!-- end of content  -->
+      </div>
+      <!-- end of inner content  -->
+    </article>
+    <article id="contentCreator-container">
+      <div class="blogForm">
+        <h1>Content Creation</h1>
+        <fieldset>
+          <label for="country">Country Visted: </label
+          ><input class="country" id="countryId" type="text" />
+        </fieldset>
+        <fieldset>
+          <label for="event">Event type: </label
+          ><input class="event" id="eventId" type="text" />
+        </fieldset>
+        <fieldset>
+          <label for="description">Event Description</label
+          ><input class="description" id="descriptionId" type="text" />
+        </fieldset>
+        <fieldset>
+          <label for="cost">Event Cost: </label
+          ><input class="cost" id="costId" type="text" />
+        </fieldset>
+        <fieldset>
+          <label for="review">My Review: </label>
+          <textarea name="review" id="review" cols="30" rows="10"></textarea>
+        </fieldset>
+        <button type="submit" id="formSubmitBtnId">Submit</button>
+      </div>
+    </article>
+  </body>
+</html>

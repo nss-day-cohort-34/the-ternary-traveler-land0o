@@ -1,0 +1,156 @@
+/* =================================
+  Base Styles
+==================================== */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #bde2fc;
+}
+
+/* ---- Layout Containers ---- */
+
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url(/src/img/ancient-arch.jpg) no-repeat 50% 50%;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+.intro .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+#content-container {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url(/src/img/adult-cactus.jpg) no-repeat 50% 50%;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+/* page content styles */
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.content h1 {
+  color: #02505a;
+  text-shadow: 0px 0px 300px #fff;
+  font-size: 275%;
+  font-family: "Special Elite", cursive;
+}
+.content p {
+  font-size: 150%;
+  cursor: pointer;
+  font-family: "Bangers", cursive;
+}
+/* hyper link styles  */
+.content a:link,
+a:visited {
+  background-color: #c4def7;
+  color: #02505a;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 5px solid gold;
+  border-radius: 15%;
+  opacity: 0.9;
+}
+.content a:hover,
+a:active {
+  background-color: #02505a;
+  color: #c4def7;
+  border: 5px solid teal;
+}
+/* login and statment sections */
+.userStatement {
+  text-align: center;
+}
+.userStatement p {
+  font-size: 150%;
+  text-align: center;
+  margin: 3% auto;
+  font-family: "Special Elite", cursive;
+}
+.userStatement h1 {
+  font-size: 150%;
+  text-align: center;
+  margin: 3% auto;
+  font-family: "Special Elite", cursive;
+}
+.stevenImage {
+  border-radius: 10%;
+}
+/* end of landing page styles  */
+
+/* blog content  */
+.inner-content h1 {
+  text-align: center;
+  font-family: "Special Elite", cursive;
+  color: springgreen;
+  font-weight: bolder;
+}
+.blog-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.blog-insert {
+  border: 5px solid teal;
+  background-color: aliceblue;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+}
+.contentCreator-container h1 {
+  margin: auto;
+}
+.blogForm {
+  width: 40%;
+  background: #fff;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.lastLink {
+  /* margin: auto; */
+  text-align: center;
+}
+
+/* form  */
+#contentCreator-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.blogForm {
+  margin-top: 10px;
+  border: 4px solid teal;
+  text-align: center;
+  width: 22%;
+  align-content: center;
+  margin: auto;
+}
+.blogForm fieldset {
+  border: 0;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+#formSubmitBtnId:hover {
+  margin: 0;
+  height: 100%;
+  width: 99%;
+  font-size: 275%;
+  background: #02505a;
+  cursor: grab;
+}
+
