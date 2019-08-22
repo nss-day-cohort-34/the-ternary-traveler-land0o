@@ -6,7 +6,7 @@ const ApiData = {
     );
   },
   getFormLocationInput: resource => {
-    return fetch(`http://localhost:8088/${resource}?expand=places`).then(
+    return fetch(`http://localhost:8088/${resource}?_expand=places`).then(
       response => response.json()
     );
   },

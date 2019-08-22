@@ -78,13 +78,13 @@
         <h1>Content Creation</h1>
           <div class="countryForm">
             <fieldset>
-          <label for="country">Country Visted: </label
+          <label for="country">Country To Vist: </label
           ><input class="country" id="countryId" type="text" />
         </fieldset>
           <label for="Visa">Visa Requried: </label>
           <select name="visa_required" id="visa_requiredId">
-          <option type="radio" name="visa_required" value="true"> true</option>
-          <option type="radio" name="visa_required" value="false"> false</option>
+          <option type="radio" name="visa_required" value=true> true</option>
+          <option type="radio" name="visa_required" value=false> false</option>
         </select>
         </fieldset><br>
         <button type="submit" id="countryformSubmitBtnId">submit</button>
@@ -92,6 +92,13 @@
       <!-- make btn submit to database not page  -->
       <!-- end of country form  -->
       <div class="reviewForm">
+          <input type="hidden" id="hiddenEditFieldId" value="" />
+        <fieldset id="selectDropdown">
+            <label for="countryVisted">Country Visted: </label>
+            <select name="countryVisted" id="countryVistedId">
+              <!-- for the select dropdown  -->
+            </select>
+        </fieldset>
         <fieldset>
           <label for="event">Event type: </label
           ><input class="event" id="eventId" type="text" />
@@ -114,6 +121,5 @@
       </div>
       <!-- end of blog form  -->
     </article>
-    <script type="module" src="/src/scripts/main.js"></script>
   </body>
 </html>

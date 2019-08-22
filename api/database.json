@@ -14,16 +14,45 @@
       "id": 3,
       "name": "France",
       "visa_required": false
+    },
+    {
+      "name": "United States",
+      "visa_required": true,
+      "id": 6
+    },
+    {
+      "name": "Canada",
+      "visa_required": true,
+      "id": 7
     }
   ],
   "interests": [
     {
       "id": 1,
-      "placeId": 1,
+      "placesId": 1,
+      "contryname": "Italy",
       "name": "Local Market",
       "description": "Local market where you can purchase local products and try the local food",
-      "cost": 0.0,
+      "cost": 0,
       "review": "You can definitely get things for a lower price if you are willing to bargain!"
+    },
+    {
+      "contryname": "Italy",
+      "name": "test",
+      "description": "test",
+      "cost": "10.00",
+      "review": "Howdy tom",
+      "placesId": 1,
+      "id": 2
+    },
+    {
+      "contryname": "Switzerland",
+      "name": "edit test",
+      "description": "edit test",
+      "cost": "$20",
+      "review": "edit test",
+      "placesId": 1,
+      "id": 3
     }
   ]
 }

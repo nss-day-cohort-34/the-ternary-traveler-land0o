@@ -1,27 +1,39 @@
 // Purpose: Holds all factory functions (objects and htmlRepresentations)
 
 const factory = Object.create({
-  createFormObj: (placeId, name, description, cost, review) => {
+  createPlaceObj: (name, visa_required) => {
     return {
-      placeId,
+      name,
+      visa_required
+    };
+  },
+  createFormObj: (contryname, name, description, cost, review, placesId) => {
+    return {
+      contryname,
       name,
       description,
       cost,
-      review
+      review,
+      placesId
     };
   },
 
   createFormHtml: formObj => {
     return `
     <aside class="blog-insert">
-    <h2>Country: ${formObj.placeId.name} </h2>
+    <h2>Country: ${formObj.contryname} </h2>
     <p>Event attended: ${formObj.name}</p>
     <p>Description: ${formObj.description}</p>
     <p>Cost: ${formObj.cost} spent</p>
     <p>My Review: ${formObj.review}</p>
-    <button id="editId_">edit</button>
-    <button id="deleteID_">delete</button>
+    <button id="editId_${formObj.id}">edit</button>
+    <button id="deleteID_${formObj.id}">delete</button>
   </aside>  
+    `;
+  },
+  createSelectOptions: formObj => {
+    return `
+    <option value="${formObj.name}">${formObj.name}</option>
     `;
   }
 });
