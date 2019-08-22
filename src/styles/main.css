@@ -66,6 +66,12 @@ a:visited {
   border-radius: 15%;
   opacity: 0.9;
 }
+#linkPId:hover {
+  cursor: pointer;
+  border: 3px solid teal;
+  background: lightgreen;
+  color: #c4def7;
+}
 .content a:hover,
 a:active {
   background-color: #02505a;
@@ -153,4 +159,14 @@ a:active {
   background: #02505a;
   cursor: grab;
 }
-
+#countryformSubmitBtnId:hover {
+  margin: 0;
+  height: 100%;
+  width: 99%;
+  font-size: 275%;
+  background: #02505a;
+  cursor: grab;
+}
+.countryForm {
+  border: 2px solid teal;
+}

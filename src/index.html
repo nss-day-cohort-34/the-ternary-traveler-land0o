@@ -41,7 +41,9 @@
         the whole cycle again. I will use this single page application to share
         points of interests for the next set of places I will be visiting.
         <br />
-        <a href="#content-container">See my trip information below.</a>
+        <a href="#content-container"
+          ><p id="linkPId">See my trip information below!!</p></a
+        >
       </p>
     </div>
     <!-- end of user statement div  -->
@@ -50,7 +52,7 @@
       <div class="inner-content">
         <h1>Trip info placeholder</h1>
         <div class="blog-content">
-          <aside class="blog-insert">
+          <!-- <aside class="blog-insert">
             <h2>Country: Italy</h2>
             <p>Event attended: Local Market</p>
             <p>
@@ -64,7 +66,7 @@
             </p>
             <button>edit</button>
             <button>delete</button>
-          </aside>
+          </aside> -->
         </div>
         <!-- end of content  -->
       </div>
@@ -72,11 +74,24 @@
     </article>
     <article id="contentCreator-container">
       <div class="blogForm">
+        <input type="hidden" id="hiddenEditFieldId" value="" />
         <h1>Content Creation</h1>
-        <fieldset>
+          <div class="countryForm">
+            <fieldset>
           <label for="country">Country Visted: </label
           ><input class="country" id="countryId" type="text" />
         </fieldset>
+          <label for="Visa">Visa Requried: </label>
+          <select name="visa_required" id="visa_requiredId">
+          <option type="radio" name="visa_required" value="true"> true</option>
+          <option type="radio" name="visa_required" value="false"> false</option>
+        </select>
+        </fieldset><br>
+        <button type="submit" id="countryformSubmitBtnId">submit</button>
+      </div>
+      <!-- make btn submit to database not page  -->
+      <!-- end of country form  -->
+      <div class="reviewForm">
         <fieldset>
           <label for="event">Event type: </label
           ><input class="event" id="eventId" type="text" />
@@ -91,10 +106,14 @@
         </fieldset>
         <fieldset>
           <label for="review">My Review: </label>
-          <textarea name="review" id="review" cols="30" rows="10"></textarea>
+          <textarea name="review" id="reviewId" cols="30" rows="10"></textarea>
         </fieldset>
         <button type="submit" id="formSubmitBtnId">Submit</button>
       </div>
+      <!-- end of div reviewForm  -->
+      </div>
+      <!-- end of blog form  -->
     </article>
+    <script type="module" src="/src/scripts/main.js"></script>
   </body>
 </html>
